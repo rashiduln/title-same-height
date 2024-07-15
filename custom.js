@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function equalizeTitleHeights() {
         const containers = document.querySelectorAll('.product-card-container'); // Select all containers
-
+        if (containers.length === 0) return;
         containers.forEach(container => {
             const items = container.querySelectorAll('.product-card'); 
             const titleClass = '.product-title';
